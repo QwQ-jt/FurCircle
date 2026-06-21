@@ -17,6 +17,30 @@ FurCircle Android APP 原型项目
 - 📦 OTA 在线升级服务框架
 - 🔒 R8 混淆规则（方案 A，兼顾安全与兼容性）
 - 🎨 自适应图标支持
+- 🔧 完整 NDK 支持（CMake + C++17，含示例代码）
+- 🛠️ 跨平台依赖自动安装脚本
+
+## 📖 快速开始
+
+请阅读 **[使用前必看](GETTING_STARTED.md)** 文档：
+
+- [🇨🇳 简体中文](GETTING_STARTED.md)
+- [🇺🇸 English](GETTING_STARTED_EN.md)
+- [🇹🇼 繁體中文](GETTING_STARTED_TW.md)
+
+## 🛠️ 自动安装脚本
+
+不想手动配置环境？使用我们的自动检测与安装脚本：
+
+### Linux / macOS
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+脚本会自动检测并安装 JDK、Android SDK、NDK、CMake 等所有依赖。
+
+### Windows
+双击运行 `setup.bat`，根据提示安装缺失的依赖。
 
 ## 技术栈
 
@@ -27,7 +51,7 @@ FurCircle Android APP 原型项目
 - **构建工具**: Gradle 8.5 + AGP 8.2.0
 - **异步**: Kotlin Coroutines
 - **数据存储**: DataStore Preferences
-- **NDK**: 支持（预留 jniLibs 目录）
+- **NDK**: CMake + C++17（完整支持，含示例代码）
 
 ## 项目结构
 
