@@ -22,8 +22,8 @@ if %errorlevel%==0 (
 ) else (
     echo [WARN] JDK not found
     echo.
-    echo Please download JDK 17 from:
-    echo   https://adoptium.net/temurin/releases/?version=17
+    echo Please download JDK 21 from:
+    echo   https://adoptium.net/temurin/releases/?version=21
     echo.
     echo After installation, set JAVA_HOME environment variable.
     echo.

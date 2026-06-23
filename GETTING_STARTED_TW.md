@@ -23,14 +23,14 @@ FurCircle 是一個 Furry 社群 APP 的 Android 原型專案，採用 Kotlin + 
 
 ### 方式一：Android Studio（推薦）
 - Android Studio Hedgehog (2023.1.1) 或更高版本
-- JDK 17（Android Studio 自帶）
+- JDK 21（Android Studio 自帶）
 - Android SDK Platform 36
 - Android SDK Build-Tools 33.0.3
 - NDK 25.2.9519653
 - CMake 3.22.1
 
 ### 方式二：命令列
-- JDK 17+
+- JDK 21+
 - Android SDK
 - Gradle 8.5（專案自帶 Wrapper，首次建構自動下載）
 

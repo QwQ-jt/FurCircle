@@ -21,8 +21,8 @@ warn() { echo -e "${YELLOW}[WARN]${NC} $1"; }
 error() { echo -e "${RED}[ERROR]${NC} $1"; }
 
 # ========== 版本配置 ==========
-JAVA_VERSION="17"
-JAVA_VERSION_FULL="17.0.19+10"
+JAVA_VERSION="21"
+JAVA_VERSION_FULL="21.0.3+9"
 GRADLE_VERSION="8.5"
 ANDROID_COMPILE_SDK="36"
 ANDROID_BUILD_TOOLS="33.0.3"
@@ -70,9 +70,9 @@ check_java() {
         success "JDK 已存在于 $JAVA_DIR"
     else
         if [ "$OS_TYPE" = "linux" ]; then
-            JAVA_URL="https://github.com/adoptium/temurin17-binaries/releases/download/jdk-${JAVA_VERSION_FULL/+/%2B}/OpenJDK17U-jdk_x64_linux_hotspot_${JAVA_VERSION_FULL/+/_}.tar.gz"
+            JAVA_URL="https://github.com/adoptium/temurin21-binaries/releases/download/jdk-${JAVA_VERSION_FULL/+/%2B}/OpenJDK21U-jdk_x64_linux_hotspot_${JAVA_VERSION_FULL/+/_}.tar.gz"
         elif [ "$OS_TYPE" = "macos" ]; then
-            JAVA_URL="https://github.com/adoptium/temurin17-binaries/releases/download/jdk-${JAVA_VERSION_FULL/+/%2B}/OpenJDK17U-jdk_x64_mac_hotspot_${JAVA_VERSION_FULL/+/_}.tar.gz"
+            JAVA_URL="https://github.com/adoptium/temurin21-binaries/releases/download/jdk-${JAVA_VERSION_FULL/+/%2B}/OpenJDK21U-jdk_x64_mac_hotspot_${JAVA_VERSION_FULL/+/_}.tar.gz"
         else
             error "不支持的操作系统: $OS_TYPE"
             return 1

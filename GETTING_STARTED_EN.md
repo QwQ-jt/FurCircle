@@ -23,14 +23,14 @@ It can be used as a learning reference or prototype base for Android development
 
 ### Option 1: Android Studio (Recommended)
 - Android Studio Hedgehog (2023.1.1) or higher
-- JDK 17 (bundled with Android Studio)
+- JDK 21 (bundled with Android Studio)
 - Android SDK Platform 36
 - Android SDK Build-Tools 33.0.3
 - NDK 25.2.9519653
 - CMake 3.22.1
 
 ### Option 2: Command Line
-- JDK 17+
+- JDK 21+
 - Android SDK
 - Gradle 8.5 (Project includes Wrapper, auto-downloads on first build)
 
